@@ -1,0 +1,16 @@
+apiVersion: networking.istio.io/v1alpha3
+kind: VirtualService
+metadata:
+  creationTimestamp: null
+  name: simplenode
+spec:
+  gateways:
+  - public-gateway.istio-system
+  - mesh
+  hosts:
+  - simplenode.simpleproject-staging.keptn06-agrabner.demo.keptn.sh
+  - simplenode
+  http:
+  - route:
+    - destination:
+        host: simplenode.simpleproject-staging.svc.cluster.local
