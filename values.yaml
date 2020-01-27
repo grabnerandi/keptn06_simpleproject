@@ -1,2 +1,4 @@
 simplenode:
   enabled: false
+simplenode-generated:
+  enabled: false
