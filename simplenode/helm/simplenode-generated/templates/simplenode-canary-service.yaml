@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: "2020-01-27T16:05:26Z"
+  name: simplenode-canary
+  resourceVersion: "20684"
+  selfLink: /api/v1/namespaces/simpleproject-prod/services/simplenode
+  uid: d4db67dd-411e-11ea-9913-0e7e2ff29058
+spec:
+  ports:
+  - name: http
+    port: 80
+    protocol: TCP
+    targetPort: 8080
+  selector:
+    app: simplenode
+  sessionAffinity: None
+  type: ClusterIP
+status:
+  loadBalancer: {}
