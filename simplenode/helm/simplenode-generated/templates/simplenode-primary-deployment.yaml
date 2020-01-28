@@ -2,11 +2,11 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   annotations:
-    deployment.kubernetes.io/revision: "1"
+    deployment.kubernetes.io/revision: "2"
   creationTimestamp: "2020-01-27T16:05:26Z"
-  generation: 1
+  generation: 2
   name: simplenode-primary
-  resourceVersion: "20854"
+  resourceVersion: "139196"
   selfLink: /apis/apps/v1/namespaces/simpleproject-prod/deployments/simplenode
   uid: d4dc86e5-411e-11ea-9913-0e7e2ff29058
 spec:
@@ -43,7 +43,7 @@ spec:
               apiVersion: v1
               fieldPath: metadata.labels['deployment']
         - name: CONTAINER_IMAGE
-          value: docker.io/grabnerandi/simplenodeservice:1.0.0
+          value: docker.io/grabnerandi/simplenodeservice:3.0.0
         - name: KEPTN_PROJECT
           value: simpleproject
         - name: KEPTN_STAGE
@@ -52,7 +52,7 @@ spec:
           value: simplenode
         - name: KEPTN_DEPLOYMENT
           value: canary
-        image: docker.io/grabnerandi/simplenodeservice:1.0.0
+        image: docker.io/grabnerandi/simplenodeservice:3.0.0
         imagePullPolicy: Always
         livenessProbe:
           failureThreshold: 3
