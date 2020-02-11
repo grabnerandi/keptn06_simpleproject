@@ -2,11 +2,11 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   annotations:
-    deployment.kubernetes.io/revision: "7"
+    deployment.kubernetes.io/revision: "9"
   creationTimestamp: "2020-01-27T16:05:26Z"
-  generation: 7
+  generation: 9
   name: simplenode-primary
-  resourceVersion: "1234155"
+  resourceVersion: "2580295"
   selfLink: /apis/apps/v1/namespaces/simpleproject-prod/deployments/simplenode
   uid: d4dc86e5-411e-11ea-9913-0e7e2ff29058
 spec:
