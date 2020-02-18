@@ -28,6 +28,10 @@ spec:
         env:
         - name: DT_CUSTOM_PROP
           value: "keptn_project={{ .Values.keptn.project }} keptn_service={{ .Values.keptn.service }} keptn_stage={{ .Values.keptn.stage }} keptn_deployment={{ .Values.keptn.deployment }}"
+        - name: DT_CUSTOM_PROP
+          value: "keptn_git=https://github.com/grabnerandi/keptn06_simpleproject/tree/staging/simplenode/helm/simplenode"
+        - name: DT_CUSTOM_PROP
+          value: "keptn_bridge=https://bridge.keptn.keptn06-agrabner.demo.keptn.sh/project/simpleproject"
         - name: POD_NAME
           valueFrom:
             fieldRef:
