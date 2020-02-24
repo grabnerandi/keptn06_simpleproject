@@ -24,6 +24,7 @@ objectives:
           - "<=2%"
   - sli: response_time_p50
   - sli: response_time_p90
+  - sli: svccalls_test_invoke
 total_score:
   pass: "90%"
   warning: 75%
