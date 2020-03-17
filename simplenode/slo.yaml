@@ -36,7 +36,7 @@ objectives:
   - sli: svccalls_test_invoke
     pass:
       - criteria:
-          - "<=500"
+          - "<=5000"
 total_score:
   pass: "90%"
   warning: 75%
