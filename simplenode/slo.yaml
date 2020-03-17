@@ -14,6 +14,9 @@ objectives:
       - criteria:
           - "<=800"
   - sli: throughput
+    pass:
+      - criteria:
+        - ">20000"
   - sli: error_rate
     weight: 2
     pass:
@@ -24,6 +27,16 @@ objectives:
           - "<=2%"
   - sli: response_time_p50
   - sli: response_time_p90
+    pass:
+      - criteria:
+          - "<=+10%"
+    warning:
+      - criteria:
+          - "<=+10%"
+  - sli: svccalls_test_invoke
+    pass:
+      - criteria:
+          - "<=5000"
 total_score:
   pass: "90%"
   warning: 75%
