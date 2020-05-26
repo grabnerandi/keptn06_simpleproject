@@ -14,6 +14,6 @@ spec:
   - route:
     - destination:
         host: simplenode-canary.simpleproject-prod.svc.cluster.local
+      weight: 100
     - destination:
         host: simplenode-primary.simpleproject-prod.svc.cluster.local
-      weight: 100
