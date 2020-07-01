@@ -1,2 +1,2 @@
-image: mongo:latest
+image: docker.io/grabnerandi/simplenodeservice:3.0.0
 replicaCount: 1
