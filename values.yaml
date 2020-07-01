@@ -1,3 +1,5 @@
+carts:
+  enabled: false
 simplenode:
   enabled: false
 simplenode-generated:
