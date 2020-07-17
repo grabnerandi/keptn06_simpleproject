@@ -2,7 +2,8 @@
   "SpecVersion": "",
   "Indicators": {
     "node_tickfreq": "metricSelector=builtin:tech.nodejs.uvLoop.count:merge(1):merge(0):avg:names;entitySelector=type(PROCESS_GROUP_INSTANCE),mzId(-8783122447839702114)",
-    "process_memory": "metricSelector=builtin:tech.generic.cpu.usage:avg:names;entitySelector=type(PROCESS_GROUP_INSTANCE),mzId(-8783122447839702114)",
+    "process_cpu": "metricSelector=builtin:tech.generic.cpu.usage:avg:names;entitySelector=type(PROCESS_GROUP_INSTANCE),mzId(-8783122447839702114)",
+    "process_memory": "metricSelector=builtin:tech.generic.mem.workingSetSize:avg:names;entitySelector=type(PROCESS_GROUP_INSTANCE),mzId(-8783122447839702114)",
     "svc_rt_p95": "metricSelector=builtin:service.response.time:percentile(50.000000):names;entitySelector=type(SERVICE),mzId(-8783122447839702114)",
     "teststep_fr": "metricSelector=calc:service.teststepfailurerate:merge(0):of_interest_ratio:names;entitySelector=type(SERVICE),mzId(-8783122447839702114)",
     "teststep_rt_Basic_Check": "metricSelector=calc:service.teststepresponsetime:merge(0):avg:names;entitySelector=type(SERVICE),mzId(-8783122447839702114)",
