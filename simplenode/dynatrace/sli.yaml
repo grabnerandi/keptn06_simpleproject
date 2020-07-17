@@ -1,9 +1,19 @@
----
-spec_version: '1.0'
-indicators:
-  throughput: "builtin:service.requestCount.total:merge(0):sum?scope=tag(keptn_project:$PROJECT),tag(keptn_stage:$STAGE),tag(keptn_service:$SERVICE),tag(keptn_deployment:$DEPLOYMENT)"
-  error_rate: "builtin:service.errors.total.count:merge(0):avg?scope=tag(keptn_project:$PROJECT),tag(keptn_stage:$STAGE),tag(keptn_service:$SERVICE),tag(keptn_deployment:$DEPLOYMENT)"
-  response_time_p50: "builtin:service.response.time:merge(0):percentile(50)?scope=tag(keptn_project:$PROJECT),tag(keptn_stage:$STAGE),tag(keptn_service:$SERVICE),tag(keptn_deployment:$DEPLOYMENT)"
-  response_time_p90: "builtin:service.response.time:merge(0):percentile(90)?scope=tag(keptn_project:$PROJECT),tag(keptn_stage:$STAGE),tag(keptn_service:$SERVICE),tag(keptn_deployment:$DEPLOYMENT)"
-  response_time_p95: "builtin:service.response.time:merge(0):percentile(95)?scope=tag(keptn_project:$PROJECT),tag(keptn_stage:$STAGE),tag(keptn_service:$SERVICE),tag(keptn_deployment:$DEPLOYMENT)"
-  svccalls_test_invoke: "calc:service.teststepservicecalls:filter(eq(Test Step,invoke)):merge(0):avg?scope=tag(keptn_project:$PROJECT),tag(keptn_stage:$STAGE),tag(keptn_service:$SERVICE),tag(keptn_deployment:$DEPLOYMENT)"
+{
+  "SpecVersion": "",
+  "Indicators": {
+    "node_tickfreq": "metricSelector=builtin:tech.nodejs.uvLoop.count:merge(1):merge(0):avg:names;entitySelector=type(PROCESS_GROUP_INSTANCE),mzId(-8783122447839702114)",
+    "process_memory": "metricSelector=builtin:tech.generic.cpu.usage:avg:names;entitySelector=type(PROCESS_GROUP_INSTANCE),mzId(-8783122447839702114)",
+    "svc_rt_p95": "metricSelector=builtin:service.response.time:percentile(50.000000):names;entitySelector=type(SERVICE),mzId(-8783122447839702114)",
+    "teststep_fr": "metricSelector=calc:service.teststepfailurerate:merge(0):of_interest_ratio:names;entitySelector=type(SERVICE),mzId(-8783122447839702114)",
+    "teststep_rt_Basic_Check": "metricSelector=calc:service.teststepresponsetime:merge(0):avg:names;entitySelector=type(SERVICE),mzId(-8783122447839702114)",
+    "teststep_rt_echo": "metricSelector=calc:service.teststepresponsetime:merge(0):avg:names;entitySelector=type(SERVICE),mzId(-8783122447839702114)",
+    "teststep_rt_homepage": "metricSelector=calc:service.teststepresponsetime:merge(0):avg:names;entitySelector=type(SERVICE),mzId(-8783122447839702114)",
+    "teststep_rt_invoke": "metricSelector=calc:service.teststepresponsetime:merge(0):avg:names;entitySelector=type(SERVICE),mzId(-8783122447839702114)",
+    "teststep_rt_version": "metricSelector=calc:service.teststepresponsetime:merge(0):avg:names;entitySelector=type(SERVICE),mzId(-8783122447839702114)",
+    "teststep_svccalls_Basic_Check": "metricSelector=calc:service.teststepservicecalls:merge(0):avg:names;entitySelector=type(SERVICE),mzId(-8783122447839702114)",
+    "teststep_svccalls_echo": "metricSelector=calc:service.teststepservicecalls:merge(0):avg:names;entitySelector=type(SERVICE),mzId(-8783122447839702114)",
+    "teststep_svccalls_homepage": "metricSelector=calc:service.teststepservicecalls:merge(0):avg:names;entitySelector=type(SERVICE),mzId(-8783122447839702114)",
+    "teststep_svccalls_invoke": "metricSelector=calc:service.teststepservicecalls:merge(0):avg:names;entitySelector=type(SERVICE),mzId(-8783122447839702114)",
+    "teststep_svccalls_version": "metricSelector=calc:service.teststepservicecalls:merge(0):avg:names;entitySelector=type(SERVICE),mzId(-8783122447839702114)"
+  }
+}
