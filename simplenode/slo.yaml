@@ -137,7 +137,7 @@
       "key_sli": false
     },
     {
-      "sli": "svc_rt_p95",
+      "sli": "svc_rt_p90",
       "pass": [
         {
           "criteria": [
@@ -151,7 +151,7 @@
       "key_sli": false
     },
     {
-      "sli": "svc_rt_p95",
+      "sli": "svc_rt_p50",
       "pass": [
         {
           "criteria": [
