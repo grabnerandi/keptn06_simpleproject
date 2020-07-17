@@ -260,14 +260,7 @@
       "key_sli": true
     },
     {
-      "sli": "process_memory_simpleproject.simplenode.staging.direct_(simplenode-6889685cb5-bfzqs)",
-      "pass": null,
-      "warning": null,
-      "weight": 1,
-      "key_sli": false
-    },
-    {
-      "sli": "process_memory_simpleproject.simplenode.staging.direct_(simplenode-5c7896c9cd-x64ft)",
+      "sli": "process_memory",
       "pass": null,
       "warning": null,
       "weight": 1,
