@@ -260,14 +260,40 @@
       "key_sli": true
     },
     {
-      "sli": "process_memory",
+      "sli": "process_memory_simpleproject.simplenode.staging.direct_(simplenode-6889685cb5-bfzqs)",
       "pass": null,
       "warning": null,
       "weight": 1,
       "key_sli": false
     },
     {
-      "sli": "process_cpu",
+      "sli": "process_memory_simpleproject.simplenode.staging.direct_(simplenode-66b98cd48-dztrt)",
+      "pass": null,
+      "warning": null,
+      "weight": 1,
+      "key_sli": false
+    },
+    {
+      "sli": "process_cpu_simpleproject.simplenode.staging.direct_(simplenode-6889685cb5-bfzqs)",
+      "pass": [
+        {
+          "criteria": [
+            "\u003c20"
+          ]
+        }
+      ],
+      "warning": [
+        {
+          "criteria": [
+            "\u003c50"
+          ]
+        }
+      ],
+      "weight": 1,
+      "key_sli": true
+    },
+    {
+      "sli": "process_cpu_simpleproject.simplenode.staging.direct_(simplenode-66b98cd48-dztrt)",
       "pass": [
         {
           "criteria": [
