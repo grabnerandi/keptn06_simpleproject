@@ -267,7 +267,7 @@
       "key_sli": false
     },
     {
-      "sli": "process_memory",
+      "sli": "process_cpu",
       "pass": [
         {
           "criteria": [
