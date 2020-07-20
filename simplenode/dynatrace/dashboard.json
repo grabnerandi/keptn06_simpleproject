@@ -44,7 +44,7 @@
       },
       "filterConfig": {
         "type": "MIXED",
-        "customName": "Event Loop Tick Frequency;sli=node_tickfreq;pass=\u003c3000;warning=\u003c5000",
+        "customName": "Event Loop Tick Frequency;sli=node_tickfreq;pass=\u003e5000;warning=\u003e3000",
         "defaultName": "Custom chart",
         "chartConfig": {
           "legendShown": true,
