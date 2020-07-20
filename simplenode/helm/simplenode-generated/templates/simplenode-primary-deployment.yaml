@@ -36,7 +36,7 @@ spec:
             fieldRef:
               fieldPath: metadata.labels['deployment']
         - name: CONTAINER_IMAGE
-          value: docker.io/grabnerandi/simplenodeservice:2.0.0
+          value: docker.io/grabnerandi/simplenodeservice:1.0.0
         - name: KEPTN_PROJECT
           value: simpleproject
         - name: KEPTN_STAGE
@@ -45,7 +45,7 @@ spec:
           value: simplenode
         - name: KEPTN_DEPLOYMENT
           value: canary
-        image: docker.io/grabnerandi/simplenodeservice:2.0.0
+        image: docker.io/grabnerandi/simplenodeservice:1.0.0
         imagePullPolicy: Always
         livenessProbe:
           httpGet:
