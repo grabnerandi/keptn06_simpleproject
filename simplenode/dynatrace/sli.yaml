@@ -6,8 +6,6 @@ indicators:
   svc_rt_p50: metricSelector=builtin:service.response.time:percentile(50.000000):names;entitySelector=type(SERVICE),mzId(-8783122447839702114)
   svc_rt_p90: metricSelector=builtin:service.response.time:percentile(90.000000):names;entitySelector=type(SERVICE),mzId(-8783122447839702114)
   svc_rt_p95: metricSelector=builtin:service.response.time:percentile(95.000000):names;entitySelector=type(SERVICE),mzId(-8783122447839702114)
-  teststep_fr_Basic_Check: metricSelector=calc:service.teststepfailurerate:merge(0):avg:names:filter(eq(Test
-    Step,Basic Check));entitySelector=type(SERVICE),mzId(-8783122447839702114)
   teststep_fr_echo: metricSelector=calc:service.teststepfailurerate:merge(0):avg:names:filter(eq(Test
     Step,echo));entitySelector=type(SERVICE),mzId(-8783122447839702114)
   teststep_fr_homepage: metricSelector=calc:service.teststepfailurerate:merge(0):avg:names:filter(eq(Test
@@ -16,8 +14,6 @@ indicators:
     Step,invoke));entitySelector=type(SERVICE),mzId(-8783122447839702114)
   teststep_fr_version: metricSelector=calc:service.teststepfailurerate:merge(0):avg:names:filter(eq(Test
     Step,version));entitySelector=type(SERVICE),mzId(-8783122447839702114)
-  teststep_rt_Basic_Check: metricSelector=calc:service.teststepresponsetime:merge(0):avg:names:filter(eq(Test
-    Step,Basic Check));entitySelector=type(SERVICE),mzId(-8783122447839702114)
   teststep_rt_echo: metricSelector=calc:service.teststepresponsetime:merge(0):avg:names:filter(eq(Test
     Step,echo));entitySelector=type(SERVICE),mzId(-8783122447839702114)
   teststep_rt_homepage: metricSelector=calc:service.teststepresponsetime:merge(0):avg:names:filter(eq(Test
@@ -26,8 +22,6 @@ indicators:
     Step,invoke));entitySelector=type(SERVICE),mzId(-8783122447839702114)
   teststep_rt_version: metricSelector=calc:service.teststepresponsetime:merge(0):avg:names:filter(eq(Test
     Step,version));entitySelector=type(SERVICE),mzId(-8783122447839702114)
-  teststep_svccalls_Basic_Check: metricSelector=calc:service.teststepservicecalls:merge(0):avg:names:filter(eq(Test
-    Step,Basic Check));entitySelector=type(SERVICE),mzId(-8783122447839702114)
   teststep_svccalls_echo: metricSelector=calc:service.teststepservicecalls:merge(0):avg:names:filter(eq(Test
     Step,echo));entitySelector=type(SERVICE),mzId(-8783122447839702114)
   teststep_svccalls_homepage: metricSelector=calc:service.teststepservicecalls:merge(0):avg:names:filter(eq(Test
