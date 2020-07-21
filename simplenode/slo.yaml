@@ -181,7 +181,7 @@
         }
       ],
       "weight": 1,
-      "key_sli": true
+      "key_sli": false
     },
     {
       "sli": "teststep_svccalls_version",
@@ -200,7 +200,7 @@
         }
       ],
       "weight": 1,
-      "key_sli": true
+      "key_sli": false
     },
     {
       "sli": "teststep_svccalls_homepage",
@@ -219,7 +219,7 @@
         }
       ],
       "weight": 1,
-      "key_sli": true
+      "key_sli": false
     },
     {
       "sli": "teststep_svccalls_Basic_Check",
@@ -238,7 +238,7 @@
         }
       ],
       "weight": 1,
-      "key_sli": true
+      "key_sli": false
     },
     {
       "sli": "teststep_svccalls_echo",
@@ -257,7 +257,7 @@
         }
       ],
       "weight": 1,
-      "key_sli": true
+      "key_sli": false
     },
     {
       "sli": "process_memory",
@@ -288,6 +288,6 @@
   ],
   "total_score": {
     "pass": "90%",
-    "warning": "75%"
+    "warning": "70%"
   }
 }
