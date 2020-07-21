@@ -42,6 +42,15 @@ objectives:
     - <1000
   weight: 2
   key_sli: false
+- sli: teststep_rt_Basic_Check
+  pass:
+  - criteria:
+    - <500
+  warning:
+  - criteria:
+    - <1000
+  weight: 2
+  key_sli: false
 - sli: teststep_rt_echo
   pass:
   - criteria:
@@ -102,6 +111,15 @@ objectives:
     - <10
   weight: 1
   key_sli: true
+- sli: teststep_fr_Basic_Check
+  pass:
+  - criteria:
+    - <5
+  warning:
+  - criteria:
+    - <10
+  weight: 1
+  key_sli: true
 - sli: teststep_fr_echo
   pass:
   - criteria:
@@ -130,6 +148,15 @@ objectives:
   weight: 1
   key_sli: false
 - sli: teststep_svccalls_homepage
+  pass:
+  - criteria:
+    - <2
+  warning:
+  - criteria:
+    - <5
+  weight: 1
+  key_sli: false
+- sli: teststep_svccalls_Basic_Check
   pass:
   - criteria:
     - <2
