@@ -1,293 +1,193 @@
-{
-  "spec_version": "",
-  "filter": null,
-  "comparison": {
-    "compare_with": "single_result",
-    "include_result_with_score": "pass",
-    "number_of_comparison_results": 1,
-    "aggregate_function": "avg"
-  },
-  "objectives": [
-    {
-      "sli": "node_tickfreq",
-      "pass": [
-        {
-          "criteria": [
-            "\u003e5000"
-          ]
-        }
-      ],
-      "warning": [
-        {
-          "criteria": [
-            "\u003e3000"
-          ]
-        }
-      ],
-      "weight": 1,
-      "key_sli": false
-    },
-    {
-      "sli": "teststep_rt_invoke",
-      "pass": [
-        {
-          "criteria": [
-            "\u003c500"
-          ]
-        }
-      ],
-      "warning": [
-        {
-          "criteria": [
-            "\u003c1000"
-          ]
-        }
-      ],
-      "weight": 2,
-      "key_sli": false
-    },
-    {
-      "sli": "teststep_rt_version",
-      "pass": [
-        {
-          "criteria": [
-            "\u003c500"
-          ]
-        }
-      ],
-      "warning": [
-        {
-          "criteria": [
-            "\u003c1000"
-          ]
-        }
-      ],
-      "weight": 2,
-      "key_sli": false
-    },
-    {
-      "sli": "teststep_rt_homepage",
-      "pass": [
-        {
-          "criteria": [
-            "\u003c500"
-          ]
-        }
-      ],
-      "warning": [
-        {
-          "criteria": [
-            "\u003c1000"
-          ]
-        }
-      ],
-      "weight": 2,
-      "key_sli": false
-    },
-    {
-      "sli": "teststep_rt_Basic_Check",
-      "pass": [
-        {
-          "criteria": [
-            "\u003c500"
-          ]
-        }
-      ],
-      "warning": [
-        {
-          "criteria": [
-            "\u003c1000"
-          ]
-        }
-      ],
-      "weight": 2,
-      "key_sli": false
-    },
-    {
-      "sli": "teststep_rt_echo",
-      "pass": [
-        {
-          "criteria": [
-            "\u003c500"
-          ]
-        }
-      ],
-      "warning": [
-        {
-          "criteria": [
-            "\u003c1000"
-          ]
-        }
-      ],
-      "weight": 2,
-      "key_sli": false
-    },
-    {
-      "sli": "svc_rt_p95",
-      "pass": [
-        {
-          "criteria": [
-            "\u003c+10%",
-            "\u003c600"
-          ]
-        }
-      ],
-      "warning": null,
-      "weight": 1,
-      "key_sli": false
-    },
-    {
-      "sli": "svc_rt_p90",
-      "pass": [
-        {
-          "criteria": [
-            "\u003c+10%",
-            "\u003c550"
-          ]
-        }
-      ],
-      "warning": null,
-      "weight": 1,
-      "key_sli": false
-    },
-    {
-      "sli": "svc_rt_p50",
-      "pass": [
-        {
-          "criteria": [
-            "\u003c+10%",
-            "\u003c500"
-          ]
-        }
-      ],
-      "warning": null,
-      "weight": 1,
-      "key_sli": false
-    },
-    {
-      "sli": "teststep_svccalls_invoke",
-      "pass": [
-        {
-          "criteria": [
-            "\u003c2"
-          ]
-        }
-      ],
-      "warning": [
-        {
-          "criteria": [
-            "\u003c5"
-          ]
-        }
-      ],
-      "weight": 1,
-      "key_sli": false
-    },
-    {
-      "sli": "teststep_svccalls_version",
-      "pass": [
-        {
-          "criteria": [
-            "\u003c2"
-          ]
-        }
-      ],
-      "warning": [
-        {
-          "criteria": [
-            "\u003c5"
-          ]
-        }
-      ],
-      "weight": 1,
-      "key_sli": false
-    },
-    {
-      "sli": "teststep_svccalls_homepage",
-      "pass": [
-        {
-          "criteria": [
-            "\u003c2"
-          ]
-        }
-      ],
-      "warning": [
-        {
-          "criteria": [
-            "\u003c5"
-          ]
-        }
-      ],
-      "weight": 1,
-      "key_sli": false
-    },
-    {
-      "sli": "teststep_svccalls_Basic_Check",
-      "pass": [
-        {
-          "criteria": [
-            "\u003c2"
-          ]
-        }
-      ],
-      "warning": [
-        {
-          "criteria": [
-            "\u003c5"
-          ]
-        }
-      ],
-      "weight": 1,
-      "key_sli": false
-    },
-    {
-      "sli": "teststep_svccalls_echo",
-      "pass": [
-        {
-          "criteria": [
-            "\u003c2"
-          ]
-        }
-      ],
-      "warning": [
-        {
-          "criteria": [
-            "\u003c5"
-          ]
-        }
-      ],
-      "weight": 1,
-      "key_sli": false
-    },
-    {
-      "sli": "process_memory",
-      "pass": null,
-      "warning": null,
-      "weight": 1,
-      "key_sli": false
-    },
-    {
-      "sli": "process_cpu",
-      "pass": [
-        {
-          "criteria": [
-            "\u003c20"
-          ]
-        }
-      ],
-      "warning": [
-        {
-          "criteria": [
-            "\u003c50"
-          ]
-        }
-      ],
-      "weight": 1,
-      "key_sli": true
-    }
-  ],
-  "total_score": {
-    "pass": "90%",
-    "warning": "70%"
-  }
-}
+spec_version: ""
+filter: {}
+comparison:
+  compare_with: single_result
+  include_result_with_score: pass
+  number_of_comparison_results: 1
+  aggregate_function: avg
+objectives:
+- sli: node_tickfreq
+  pass:
+  - criteria:
+    - '>5000'
+  warning:
+  - criteria:
+    - '>3000'
+  weight: 1
+  key_sli: false
+- sli: teststep_rt_invoke
+  pass:
+  - criteria:
+    - <500
+  warning:
+  - criteria:
+    - <1000
+  weight: 2
+  key_sli: false
+- sli: teststep_rt_version
+  pass:
+  - criteria:
+    - <500
+  warning:
+  - criteria:
+    - <1000
+  weight: 2
+  key_sli: false
+- sli: teststep_rt_homepage
+  pass:
+  - criteria:
+    - <500
+  warning:
+  - criteria:
+    - <1000
+  weight: 2
+  key_sli: false
+- sli: teststep_rt_Basic_Check
+  pass:
+  - criteria:
+    - <500
+  warning:
+  - criteria:
+    - <1000
+  weight: 2
+  key_sli: false
+- sli: teststep_rt_echo
+  pass:
+  - criteria:
+    - <500
+  warning:
+  - criteria:
+    - <1000
+  weight: 2
+  key_sli: false
+- sli: svc_rt_p95
+  pass:
+  - criteria:
+    - <+10%
+    - <600
+  warning: []
+  weight: 1
+  key_sli: false
+- sli: svc_rt_p90
+  pass:
+  - criteria:
+    - <+10%
+    - <550
+  warning: []
+  weight: 1
+  key_sli: false
+- sli: svc_rt_p50
+  pass:
+  - criteria:
+    - <+10%
+    - <500
+  warning: []
+  weight: 1
+  key_sli: false
+- sli: teststep_fr_invoke
+  pass:
+  - criteria:
+    - <5
+  warning:
+  - criteria:
+    - <10
+  weight: 1
+  key_sli: true
+- sli: teststep_fr_version
+  pass:
+  - criteria:
+    - <5
+  warning:
+  - criteria:
+    - <10
+  weight: 1
+  key_sli: true
+- sli: teststep_fr_homepage
+  pass:
+  - criteria:
+    - <5
+  warning:
+  - criteria:
+    - <10
+  weight: 1
+  key_sli: true
+- sli: teststep_fr_Basic_Check
+  pass:
+  - criteria:
+    - <5
+  warning:
+  - criteria:
+    - <10
+  weight: 1
+  key_sli: true
+- sli: teststep_fr_echo
+  pass:
+  - criteria:
+    - <5
+  warning:
+  - criteria:
+    - <10
+  weight: 1
+  key_sli: true
+- sli: teststep_svccalls_invoke
+  pass:
+  - criteria:
+    - <2
+  warning:
+  - criteria:
+    - <5
+  weight: 1
+  key_sli: false
+- sli: teststep_svccalls_version
+  pass:
+  - criteria:
+    - <2
+  warning:
+  - criteria:
+    - <5
+  weight: 1
+  key_sli: false
+- sli: teststep_svccalls_homepage
+  pass:
+  - criteria:
+    - <2
+  warning:
+  - criteria:
+    - <5
+  weight: 1
+  key_sli: false
+- sli: teststep_svccalls_Basic_Check
+  pass:
+  - criteria:
+    - <2
+  warning:
+  - criteria:
+    - <5
+  weight: 1
+  key_sli: false
+- sli: teststep_svccalls_echo
+  pass:
+  - criteria:
+    - <2
+  warning:
+  - criteria:
+    - <5
+  weight: 1
+  key_sli: false
+- sli: process_memory
+  pass: []
+  warning: []
+  weight: 1
+  key_sli: false
+- sli: process_cpu
+  pass:
+  - criteria:
+    - <20
+  warning:
+  - criteria:
+    - <50
+  weight: 1
+  key_sli: true
+total_score:
+  pass: 90%
+  warning: 70%
