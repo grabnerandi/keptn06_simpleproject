@@ -124,7 +124,7 @@
       "query": "",
       "type": "",
       "CustomName": "",
-      "Markdown": "KQG.Total.Pass=90%;KQG.Total.Warning=75%;KQG.Compare.WithScore=pass;KQG.Compare.Results=1;KQG.Compare.Function=avg",
+      "Markdown": "KQG.Total.Pass=90%;KQG.Total.Warning=70%;KQG.Compare.WithScore=pass;KQG.Compare.Results=1;KQG.Compare.Function=avg",
       "bounds": {
         "top": 0,
         "left": 0,
@@ -430,7 +430,7 @@
       },
       "filterConfig": {
         "type": "MIXED",
-        "customName": "Test Step Service Calls;sli=teststep_svccalls;pass=\u003c2;warning=\u003c5;key=true",
+        "customName": "Test Step Service Calls;sli=teststep_svccalls;pass=\u003c2;warning=\u003c5",
         "defaultName": "Custom chart",
         "chartConfig": {
           "legendShown": true,
